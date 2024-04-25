@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Page</title>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+</head>
+<body>
+  <img id="image" src="" alt="Face Image">
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+        apiKey: "AIzaSyB-Q5qMCkrlbm2JiqPi1bOf_VH3gg6w48o",
+  authDomain: "test-aaa1a.firebaseapp.com",
+  projectId: "test-aaa1a",
+  storageBucket: "test-aaa1a.appspot.com",
+  messagingSenderId: "17893224422",
+  appId: "1:17893224422:web:1431aad3356f3f264fb027",
+  measurementId: "G-0YZREPS4FH"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // Get a reference to the storage service
+    var storage = firebase.storage();
+
+    // Create a storage reference from our storage service
+    var storageRef = storage.ref();
+
+    // Reference to the file
+    var imageRef = storageRef.child('images/1.png'); // replace with your image path
+
+    // Get the download URL
+    imageRef.getDownloadURL()
+      .then((url) => {
+        // Insert url into an <img> tag to "download"
+        document.getElementById('image').src = url;
+      })
+      .catch((error) => {
+        console.error('Error getting document:', error);
+      });
+  </script>
+</body>
+</html>

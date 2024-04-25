@@ -1,0 +1,22 @@
+{
+  "name": "face-detection-javascript-master",
+  "version": "1.0.0",
+  "description": "## `navigator.getUserMedia`",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^7.10.1",
+    "express": "^4.19.2",
+    "firebase": "^10.11.0",
+    "firebase-admin": "^12.1.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "vite": "^5.1.6"
+  }
+}
