@@ -226,5 +226,29 @@
     "gender": "male",
     "emotion": "neutral",
     "picture": "images/1.png"
+  },
+  {
+    "age": 22,
+    "gender": "male",
+    "emotion": "neutral",
+    "picture": "images/1.png"
+  },
+  {
+    "age": 22,
+    "gender": "male",
+    "emotion": "neutral",
+    "picture": "images/1.png"
+  },
+  {
+    "age": 20,
+    "gender": "male",
+    "emotion": "happy",
+    "picture": "images/1.png"
+  },
+  {
+    "age": 16,
+    "gender": "female",
+    "emotion": "neutral",
+    "picture": "images/1.png"
   }
 ]

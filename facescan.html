@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js" type="module"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src='https://cdn.jsdelivr.net/npm/deepar/js/deepar.js'> </script>
+</head>
+<body class="body">
+  <section class="loading">
+    <div class="load">
+        <div class="faceload">
+            <div class="dots"></div>
+        </div>
+        <h3>Loading...</h3>
+    </div>
+</section>
+  <section class="scanner">
+    <div class="title">
+    <div class="facebox">
+        <p>FaceAware</p>
+        <div class="dot2"></div>
+        <p>FaceAware</p>
+        <div class="dot2"></div>
+        <p>FaceAware</p>
+        <div class="dot2"></div>
+        <p>FaceAware</p>
+    </div>
+    <div class="language-switcher">
+      en <i class="fas fa-chevron-down"></i>
+  </div>
+  </div>
+    <div class="box">
+      <div class="face-title">
+        <p data-translate="face-scanner">Face scanner</p>
+    </div>
+        <div class="main-box">
+          <div class="warninfo-box">
+            <p class="one" data-translate="make-sure-face-visible">▸ Make sure your entire face is visible.</p>
+            <p class="two" data-translate="press-start-when-ready">▸ Press the start button when you are ready.</p>
+        </div>
+            <div class="camera-box">
+              <section class="scan">
+                <div id="videoContainer" class="vids">
+                  <video id="video" class="video" width="370" height="190" autoplay muted></video>
+                  <!-- Canvas will be added here by the script -->
+                </div>
+               
+              </section>
+                <img class="box2" src="../images2/box2.svg" alt="">
+            </div>
+            <div class="cardif-box" style="background-image: url('../images2/Document-0 (5).svg');">
+              <div id="idCard" >
+                <p id="age" data-translate="age"></p>
+                <p id="gender" data-translate="gender"></p>
+                <p id="emotion" data-translate="emotion"></p>
+            </div>            
+            </div>
+            
+        </div>
+        <div class="circle">
+            <div class="text">
+                <p>- your face is not your own - Your face is not your own </p>
+            </div>
+        </div>
+        <div class="dot"></div>
+       <a href="startpages/set.html"><button  id="Next" class="button">Next</button></a>
+       <button  id="start" class="button2">Scan</button>
+        <div class="corner top-right"></div>
+        <div class="corner bottom-left"></div>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="step">STEP</div>
+        <div class="dot2"></div>
+        <div class="line">
+            <div class="thick-line">
+                <p>4/5</p>
+            </div>
+        </div>
+    </div>  
+</section> 
+<div id="deep-ar-filters">
+  <!--Hidden container for rendering the deep ar canvas, used for making face filters-->
+</div>
+  <script src="scripts/loading.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/translate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-expression-recognition"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/tiny-face-detector"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-recognition"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/age_gender_recognition"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+</body>
+</html>

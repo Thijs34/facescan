@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="termbox">
+        <img src="../startpages/termimgs/termbox.svg" alt="">
+    
+        <div class="text-box" id="text-box-1"><h1>TERMS AND CONDITIONS</h1></div>
+        <div class="text-box" id="text-box-2">
+
+            <p>
+            Welcome to "FaceAware" virtual reality (VR) experience. Before you proceed, please carefully read and agree to the following terms and conditions:<br><br>
+            
+            1. Acceptance of Terms: By accessing or using this VR experience, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you may not access or use the VR experience.<br>
+            2. VR Experience Description: "FaceAware" is an immersive virtual reality experience designed to educate users about the potential risks and ethical implications associated with facial recognition technology (FRT). <br>
+            3. User Responsibility: Users are solely responsible for their actions and interactions within the VR environment. Any misuse or inappropriate behavior will result in immediate termination of access to the VR experience.<br>
+            4. Assumption of Risk: Users acknowledge and understand that participating in virtual reality experiences carries inherent risks, including but not limited to motion sickness, disorientation, and psychological effects. By accessing the VR experience, users assume all associated risks. <br>
+            5. Privacy and Data Collection: We are committed to protecting your privacy. However, by using this VR experience, you consent to the collection and processing of your personal data for the purpose of enhancing and improving the VR experience. This may include tracking your movements and interactions within the virtual environment.<br>
+            6. Data Breach Simulation: As part of the educational aspect of this VR experience, users' personal data may be simulated to demonstrate the potential consequences of a data breach. This simulation is for educational purposes only and does not involve actual data breaches or compromises of user information.<br>
+            7. Intellectual Property: All content, including but not limited to graphics, audio, and text, within the VR experience is protected by intellectual property laws and is owned or licensed by the creators of this experience. Users may not reproduce, distribute, or modify any content without prior written permission.<br>
+            8. Limitation of Liability: In no event shall the creators of this VR experience be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with the use of this VR experience, whether based on contract, tort, strict liability, or otherwise.<br>
+            9. Modifications to Terms: We reserve the right to modify, suspend, or terminate these Terms and Conditions at any time without prior notice. It is the responsibility of users to regularly review these terms for any changes.<br>
+            10. Governing Law: These Terms and Conditions shall be governed by and construed in accordance with the laws and stuff, without regard to its conflict of law provisions.<br>
+            11. Data Deletion: At the conclusion of your VR experience, all personal  data collected from the user will be promptly and permanently deleted.  We are committed to respecting your privacy and ensuring that your data  is handled responsibly. If you have any concerns about the collection or  use of your data, please contact us at FaceAware@info.com for further  assistance.<br>
+            12. By accessing "The Dangers of Facial Recognition Technology" VR experience, you acknowledge that you have read, understood, and agree to abide by these Terms and Conditions.</div>
+        </p>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox-1">
+            <label for="checkbox-1"><p>By clicking this box you acknowledge that you have read and agree to our Terms and conditions</p></label>
+          </div>
+          
+          <a href="userinfo.html" class="text-box-link" id="next-link">
+            <div class="text-box" id="text-box-3">
+              <p>NEXT</p>
+            </div>
+          </a>
+          
+          <div class="progress-bar2">
+            <div class="step">STEP</div>
+            <div class="dot2"></div>
+            <div class="line">
+              <div class="thick-line2">
+                <p>2/5</p>
+              </div>
+            </div>
+          </div>
+          
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              document.getElementById('next-link').addEventListener('click', function(event) {
+                var checkbox = document.getElementById('checkbox-1');
+                if (!checkbox.checked) {
+                  event.preventDefault();
+                  alert('To proceed, please affirm your consent to our terms and conditions by selecting the checkbox.');
+                }
+              });
+            });
+          </script>
+          
+      
+    
+</body>
+</html>

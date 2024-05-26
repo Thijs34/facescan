@@ -65,3 +65,9 @@ test.json/
 
 # dotenv environment variables file
 .env
+
+#images folder with the fake profiles and deepfakes
+images/
+
+#json file with user data from the facial scanner
+userinfo.json
