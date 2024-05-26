@@ -12,11 +12,18 @@
   "license": "ISC",
   "dependencies": {
     "@google-cloud/storage": "^7.10.1",
+    "admin": "^1.4.1",
+    "apify-client": "^2.9.3",
+    "cors": "^2.8.5",
+    "deepar": "^5.6.4",
     "express": "^4.19.2",
-    "firebase": "^10.11.0",
+    "firebase": "^10.12.1",
     "firebase-admin": "^12.1.0",
     "fs": "^0.0.1-security",
     "multer": "^1.4.5-lts.1",
+    "node-html-to-image": "^4.0.0",
+    "puppeteer": "^10.4.0",
+    "request": "^2.88.2",
     "vite": "^5.1.6"
   }
 }

@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
-<body class="body">
-  <div id="idCard" style="display: none;">
-    <h2>ID Card</h2>
-    <p id="age"></p>
-    <p id="gender"></p>
-    <p id="emotion"></p>
-  </div>
-  <canvas id="Matrix"></canvas>
-  <section class="scan">
-    <div class="vids">
-    <video id="video" class="video" width="460" height="580" autoplay muted></video>
-    <button id="start">Start</button>
-    <a href="https://192.168.10.137:5175/"><button>VR</button></a>
-    </div>
-  </section>
-  <script src="scripts/matrix.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-expression-recognition"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/tiny-face-detector"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-recognition"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/age_gender_recognition"></script>
-    <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+<body>
+    <div class="termbox">
+        <img src="startpages/termimgs/start.svg" alt="Startbox" class="startbox">
+        
+        <a href="../startpages/welcome.html" class="text-box-link" id="next-link">
+          <div class="text-box" id="text-box-4">
+            <p>START</p>
+          </div>
+        </a>
+      </div>
+      
+      
+    
 </body>
 </html>
